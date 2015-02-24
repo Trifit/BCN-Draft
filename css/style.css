@@ -1,0 +1,374 @@
+body{
+	color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 62.5%;
+    margin: 0 auto;
+    padding: 0 auto;
+	background:url(../img/bg-body-03.jpg) no-repeat scroll center 13px #F2F2F2;
+}
+
+li{
+	list-style:none;
+}
+
+header{
+	background-color:#F6F6F6;
+	margin:0 auto 0 auto;
+}
+
+
+/** Barra d'idiomes i logo **/
+
+#barra_idioma{
+	height:47px;
+	background-color:#F6F6F6;	
+	margin:0 auto 0 auto;	
+	width:925px;
+	
+}
+
+#logo{
+	float:left;
+	padding-top:2px;
+	height:43px;
+	width:250px;
+	transition:width 1s;
+	-moz-transition:width 1s; /* Firefox 4 */
+	-webkit-transition:width 1s; /* Safari and Chrome */
+	-o-transition:width 1s; /* Opera */
+}
+
+#logo:hover{
+	background:url(../img/logo-ajment-hover.png) no-repeat right;
+}
+
+
+#idiomes{
+	float:right;
+	margin:0;
+	vertical-align:auto;
+	padding: 16px 0 10px 15px;
+}
+
+#idiomes span{
+	background:url(../img/marcador-idioma.png) center bottom no-repeat;	
+	font-size:12px;
+	font-weight:bold;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+}
+
+#idiomes li a{
+	font-size:12px;
+	padding-bottom:8px;
+	padding-left:8px;
+}
+
+#first{
+	background:none !important;
+}
+#idiomes li{
+	float:left;
+	background:url(../img/separador-barra.png) repeat-y;
+	line-height:1.4em;
+	width:40px;
+	
+}
+
+#idiomes a{
+	font-style:normal;
+	color:#000;
+	font-size: 12px !important;
+	text-decoration:none;
+
+}
+
+/**main**/
+
+#main{
+	margin:0 auto;
+	width:925px;
+}
+#main ul{
+	margin:0 auto 0 auto;
+	padding-left:0;
+}
+
+#barcelona-titol{
+	padding-top: 4px;
+	padding-left: 5px!important;
+}
+
+#barra-titol{
+	padding-left: 5px!important;
+}
+#barra-titol li{
+	float:left;
+	padding-right:20px;	
+}
+
+
+#barra-titol li a{
+	text-decoration:none;
+	color:#FFF;
+	font-size:16px;
+	font-weight:bold;	
+}
+
+#barra-titol{
+	padding-left: 5px;
+}
+
+#barra-cerca{
+	float:right;
+	
+}
+
+#frmcerca{
+	background:url(../img/input-cercador.png) no-repeat center;
+	float:left;
+	width:203px;
+	height:20px;
+	margin-top:0;
+}
+
+#barra_cerca a{	
+	float:right;	
+}
+
+
+#cerca{
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;		
+	height:20px;	
+	font-size:12px;
+	float:left;
+	padding-left:10px;
+
+}
+
+#barra-cerca p{
+	margin-top:0;
+}
+
+#cerca-avancada{
+	float: right;
+	margin-left: 10px;
+    margin-top: 5px !important;
+
+}
+
+#barra-cerca a{
+	color:#FFF;
+	text-decoration:none;	
+	font-size: 1.1em !important;
+	text-decoration: none;
+}
+
+#barra-cerca label{
+	visibility:hidden;
+}
+
+#envia{
+	margin-top:4px;	
+	margin-left:10px;
+}
+
+#marc-web{
+	padding-top:40px;
+}
+
+#actualitat{	
+	height:350px;	
+	background-color:#FFF;
+	box-shadow: 0px 30px 20px -20px #999;
+	border:solid 1px #F6F6F6;
+	
+}
+
+#actualitat-gran{
+	float:left;
+	height:340px;
+	width:604px;
+	padding:5px 0 0 5px;
+}
+
+.actualitat-miniatures-1erafila{
+	float:left;
+	height: 84px;
+	width: 154px;
+	padding:5px 0 1px 2px;
+	margin: 0 auto;
+
+}
+
+.actualitat-miniatures{
+	float:left;
+	height: 84px;
+	width: 154px;
+	padding:0 0 1px 2px;
+	margin: 0 auto;
+}
+
+#actualitat-miniatures li{
+	float:left;
+}
+
+#serveis{
+	padding: 40px 0 0 0;
+}
+
+#oficina{
+	background:url(../img/sprites-2.jpg) no-repeat scroll 0 0 transparent;	
+	float: left;
+	padding: 0 4px 0 0;
+}
+
+#oficina a{
+	height: 172px;
+	width: 174px;
+	position: relative;
+	letter-spacing: -0.06em;
+	color: #0D8ED1;
+	font-weight: bold;	
+	text-decoration: none;
+	word-spacing: -0.1em;
+	display: block;
+
+}
+
+#oficina a h2{
+	padding-top: 70px;
+	margin-left: 10px;
+	border-bottom: 1px dotted #0D8ED1;
+	word-spacing: -0.1em;
+	font-size: 1.6em;
+	margin-top: 0px;
+	width: 97px;
+	margin-bottom:4px;
+}
+
+#oficina ul{	  
+    line-height: 1em;
+    padding-left: 4px;
+}
+
+#oficina ul li{
+	color: #fcbf05;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+#oficina ul li span{
+	color: #1A4059;	
+	padding-left: 2px;
+	font-weight: bold;
+
+}
+
+#guia{
+	background: url(../img/bn-guia-bcn-ca.jpg) no-repeat scroll 0 0;	
+	float: left;
+}
+
+#guia a{
+	height:85px;
+	width:496px;
+	position: relative;	
+	color: #0D8ED1;	
+	text-decoration: none;
+	word-spacing: -0.1em;
+	display: block;	
+}
+
+#guia a h2{
+	font-size: 1.8em;
+    padding: 13px 0 0 14px;
+    letter-spacing: -0.06em;
+    word-spacing: -0.1em;	
+    font-weight: bold;	
+    margin: 0 auto;
+}
+
+
+#guia ul li{
+	color: #555555;
+    display: block;    
+    margin-left: 1.4em;
+    width: 11.8em;
+}
+
+#guia ul li span{
+	line-height: 1.1em;
+	font-size: 1.1em;
+}
+
+#planol a, #com a, #transit a, #webs-bcn a{	
+	position: relative;	
+	color: #0D8ED1;	
+	text-decoration: none;
+	word-spacing: -0.1em;
+	display: block;	
+	width: 496px;
+	height: 85px;
+}
+
+#planol a h2, #com a h2, #transit a h2, #webs-bcn a h2{	
+		font-size: 1.8em;
+    padding: 13px 0 0 14px;
+    letter-spacing: -0.06em;
+    word-spacing: -0.1em;	
+    font-weight: bold;	
+    margin: 0 auto;
+}
+
+#planol ul, #com ul, #transit ul, #webs-bcn ul{
+	font-size: 1.1em;
+}
+
+#planol ul li, #com ul li, #transit ul li, #webs-bcn ul li{
+	color: #555555;
+    display: block;
+    line-height: 1.1em;
+    margin-left: 1.4em;
+    width: 11.8em;
+
+}
+
+#planol ul li span, #com ul li span, #transit ul li span, #webs-bcn ul li span{
+ 	display: block;    
+    padding: 0;	
+}
+
+#planol{
+	background:url(../img/sprites-2.jpg) no-repeat scroll left -788px transparent;	
+	width: 249px;
+	height: 93px;
+	float: left;
+}
+
+
+
+#com{
+	background:url(../img/sprites-2.jpg) no-repeat scroll left -483px transparent;
+	width: 249px;
+	height: 93px;
+	float: left;
+}
+
+#transit{
+	background:url(../img/sprites-2.jpg) no-repeat scroll left -990px transparent;
+	width: 249px;
+	height: 93px;
+	float: left;
+}
+
+#webs-bcn{
+	background:url(../img/sprites-2.jpg) no-repeat scroll left -1181px transparent;
+	width: 249px;
+	height: 93px;
+	float: left;	
+}

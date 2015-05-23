@@ -3,8 +3,7 @@ body{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 62.5%;
     margin: 0 auto;
-    padding: 0 auto;
-	background:url(../img/bg-body-03.jpg) no-repeat scroll center 13px #F2F2F2;
+    background:url(../img/bg-body-03.jpg) no-repeat scroll center 13px #F2F2F2;
 }
 
 li{
@@ -13,75 +12,82 @@ li{
 
 header{
 	background-color:#F6F6F6;
-	margin:0 auto 0 auto;
+	margin:0 auto;
 }
 
 
 /** Barra d'idiomes i logo **/
 
 #barra_idioma{
-	height:47px;
+	height:43px;
 	background-color:#F6F6F6;	
-	margin:0 auto 0 auto;	
-	width:925px;
-	
+	margin:0 auto;	
+	width:925px;	
 }
+
 
 #logo{
-	float:left;
-	padding-top:2px;
-	height:43px;
-	width:250px;
-	transition:width 1s;
-	-moz-transition:width 1s; /* Firefox 4 */
-	-webkit-transition:width 1s; /* Safari and Chrome */
-	-o-transition:width 1s; /* Opera */
+	position: relative;
+	float: left;
+	height: 43px;
+	background: url(../img/logo-ajment.png) top left no-repeat;
 }
 
-#logo:hover{
-	background:url(../img/logo-ajment-hover.png) no-repeat right;
+
+.logo_top{
+	position: absolute;
+	z-index:1;	
 }
 
+.logo_bottom{
+	position: absolute;
+	left: 0;
+	top: 0;		
+}
+
+#logo:hover .logo_bottom{
+	left:130px;
+	-webkit-transition: all .5s ease-out;
+	   -moz-transition: all .5s ease-out;
+	    -ms-transition: all .5s ease-out;
+	     -o-transition: all .5s ease-out;
+	        transition: all .5s ease-out;
+}
+
+#logo:hover .logo_top{
+	background-color: #fff;
+}
 
 #idiomes{
 	float:right;
-	margin:0;
-	vertical-align:auto;
-	padding: 16px 0 10px 15px;
+	margin-top: 15px;
 }
 
-#idiomes span{
+#idiomes li a:hover span{
 	background:url(../img/marcador-idioma.png) center bottom no-repeat;	
-	font-size:12px;
-	font-weight:bold;
 	padding-bottom:4px;
-	padding-left:4px;
-	padding-right:4px;
 }
 
-#idiomes li a{
-	font-size:12px;
-	padding-bottom:8px;
-	padding-left:8px;
-}
-
-#first{
-	background:none !important;
-}
 #idiomes li{
 	float:left;
 	background:url(../img/separador-barra.png) repeat-y;
 	line-height:1.4em;
 	width:40px;
-	
 }
 
-#idiomes a{
+#idiomes li a{
+	font-size:12px;
+	padding:0 8px;	
 	font-style:normal;
 	color:#000;
-	font-size: 12px !important;
 	text-decoration:none;
+}
 
+
+#first{
+	background:none !important;
+	font-size:12px;
+	padding-left: 2px;
 }
 
 /**main**/
@@ -91,9 +97,10 @@ header{
 	width:925px;
 }
 #main ul{
-	margin:0 auto 0 auto;
 	padding-left:0;
 }
+
+/* Barra de titol */
 
 #barcelona-titol{
 	padding-top: 4px;
@@ -108,7 +115,6 @@ header{
 	padding-right:20px;	
 }
 
-
 #barra-titol li a{
 	text-decoration:none;
 	color:#FFF;
@@ -116,13 +122,10 @@ header{
 	font-weight:bold;	
 }
 
-#barra-titol{
-	padding-left: 5px;
-}
+/* Barra de cerca */
 
 #barra-cerca{
 	float:right;
-	
 }
 
 #frmcerca{
@@ -133,10 +136,14 @@ header{
 	margin-top:0;
 }
 
-#barra_cerca a{	
-	float:right;	
-}
 
+#barra-cerca a{
+	float:right;	
+	color:#FFF;
+	text-decoration:none;	
+	font-size: 1.1em !important;
+	text-decoration: none;
+}
 
 #cerca{
 	background: none repeat scroll 0 0 transparent;
@@ -145,35 +152,23 @@ header{
 	font-size:12px;
 	float:left;
 	padding-left:10px;
-
 }
 
-#barra-cerca p{
+#barra-cerca form p{
 	margin-top:0;
 }
 
 #cerca-avancada{
 	float: right;
-	margin-left: 10px;
-    margin-top: 5px !important;
-
+	margin: 5px 0 0 10px;
+	
 }
 
-#barra-cerca a{
-	color:#FFF;
-	text-decoration:none;	
-	font-size: 1.1em !important;
-	text-decoration: none;
+#envia{	
+	margin: 4px 0 0 10px;	
 }
 
-#barra-cerca label{
-	visibility:hidden;
-}
-
-#envia{
-	margin-top:4px;	
-	margin-left:10px;
-}
+/* marc web */
 
 #marc-web{
 	padding-top:40px;
@@ -182,9 +177,7 @@ header{
 #actualitat{	
 	height:350px;	
 	background-color:#FFF;
-	box-shadow: 0px 30px 20px -20px #999;
-	border:solid 1px #F6F6F6;
-	
+	box-shadow: 0px 30px 20px -20px #999;		
 }
 
 #actualitat-gran{
@@ -194,13 +187,8 @@ header{
 	padding:5px 0 0 5px;
 }
 
-.actualitat-miniatures-1erafila{
-	float:left;
-	height: 84px;
-	width: 154px;
+.actualitat-miniatures:nth-child(2), .actualitat-miniatures:nth-child(3){
 	padding:5px 0 1px 2px;
-	margin: 0 auto;
-
 }
 
 .actualitat-miniatures{
@@ -208,16 +196,16 @@ header{
 	height: 84px;
 	width: 154px;
 	padding:0 0 1px 2px;
-	margin: 0 auto;
+	
 }
 
-#actualitat-miniatures li{
-	float:left;
-}
+/* Serveis */
 
 #serveis{
 	padding: 40px 0 0 0;
 }
+
+/* Oficina virtual */
 
 #oficina{
 	background:url(../img/sprites-2.jpg) no-repeat scroll 0 0 transparent;	
@@ -235,7 +223,6 @@ header{
 	text-decoration: none;
 	word-spacing: -0.1em;
 	display: block;
-
 }
 
 #oficina a h2{
@@ -260,6 +247,7 @@ header{
 	font-weight: bold;
 	font-size: 12px;
 	padding-left: 10px;
+	line-height: 14px;
 }
 
 #oficina ul li span{
@@ -268,6 +256,8 @@ header{
 	font-weight: bold;
 
 }
+
+/* Guia Barcelona */
 
 #guia{
 	background: url(../img/bn-guia-bcn-ca.jpg) no-repeat scroll 0 0;	
@@ -293,7 +283,6 @@ header{
     margin: 0 auto;
 }
 
-
 #guia ul li{
 	color: #555555;
     display: block;    
@@ -306,28 +295,25 @@ header{
 	font-size: 1.1em;
 }
 
+/* Planol */
+
 #planol a, #com a, #transit a, #webs-bcn a{	
 	position: relative;	
 	color: #0D8ED1;	
 	text-decoration: none;
 	word-spacing: -0.1em;
-	display: block;	
 	width: 496px;
 	height: 85px;
 }
 
 #planol a h2, #com a h2, #transit a h2, #webs-bcn a h2{	
-		font-size: 1.8em;
+	font-size: 1.8em;
     padding: 13px 0 0 14px;
     letter-spacing: -0.06em;
-    word-spacing: -0.1em;	
     font-weight: bold;	
     margin: 0 auto;
 }
 
-#planol ul, #com ul, #transit ul, #webs-bcn ul{
-	font-size: 1.1em;
-}
 
 #planol ul li, #com ul li, #transit ul li, #webs-bcn ul li{
 	color: #555555;
@@ -335,40 +321,27 @@ header{
     line-height: 1.1em;
     margin-left: 1.4em;
     width: 11.8em;
-
 }
 
-#planol ul li span, #com ul li span, #transit ul li span, #webs-bcn ul li span{
- 	display: block;    
-    padding: 0;	
+
+#serveis li:nth-child(n+3){
+	width: 249px;
+	height: 93px;
+	float: left;	
 }
 
 #planol{
-	background:url(../img/sprites-2.jpg) no-repeat scroll left -788px transparent;	
-	width: 249px;
-	height: 93px;
-	float: left;
+	background:url(../img/sprites-2.jpg) no-repeat scroll left -788px transparent;		
 }
-
-
 
 #com{
 	background:url(../img/sprites-2.jpg) no-repeat scroll left -483px transparent;
-	width: 249px;
-	height: 93px;
-	float: left;
 }
 
 #transit{
 	background:url(../img/sprites-2.jpg) no-repeat scroll left -990px transparent;
-	width: 249px;
-	height: 93px;
-	float: left;
 }
 
 #webs-bcn{
 	background:url(../img/sprites-2.jpg) no-repeat scroll left -1181px transparent;
-	width: 249px;
-	height: 93px;
-	float: left;	
 }

@@ -22,12 +22,13 @@
         <header>
 	        <div id="barra_idioma">
                 <div id="logo">
-                    <a href="#"><img src="img/logo-ajment.png" alt="Logotip de l'Ajuntament de Barcelona. Enllaç a la pàgina principal del web de Barcelona" height="43" width="130" /></a>         
+                    <img src="img/logo-ajment.png" alt="Logotip de l'Ajuntament de Barcelona. Enllaç a la pàgina principal del web de Barcelona" height="43" width="130" class="logo_top"/></a>         
+                    <img src="img/logo-ajment-hover.png" alt="Logotip de l'Ajuntament de Barcelona. Enllaç a la pàgina principal del web de Barcelona" height="43" width="130" class="logo_bottom"/></a>         
                 </div>
                 <ul id="idiomes">
-                	<li id="first"><span>CAT</span></li>
-                    <li><a href="#" title="Castellano" hreflang="es" lang="es" xml:lang="es">CAS</a></li>
-                    <li><a href="#" title="English" hreflang="en" lang="en" xml:lang="en">ENG</a></li>
+                	<li id="first">CAT</li>
+                    <li><a href="#" title="Castellano" hreflang="es" lang="es" xml:lang="es"><span>CAS</span></a></li>
+                    <li><a href="#" title="English" hreflang="en" lang="en" xml:lang="en"><span>ENG</span></a></li>
                 </ul>
             </div>
 		</header>
@@ -46,8 +47,7 @@
             <div id="barra-cerca">            	
             	<form action="http://w10.bcn.es/APPS/cercagsa/fromCharmap/iso-8859-1/APPS/cercagsa/search.do?idioma=ca" method="post" id="frmcerca">
       			    <p>
-           				<label for="cerca">Cerca</label>
-		        	    <input type="text" value="" name="q" placeholder="Cerca" id="cerca" />
+           				<input type="text" value="" name="q" placeholder="Cerca" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cerca'" id="cerca" />
  		   				<input type="image" alt="Envia" id="envia" value="" src="./img/lupa-cercador.gif" />
 	     		    </p>
     			</form>
@@ -57,8 +57,8 @@
             	<div id="actualitat"> 
                     <ul>
                         <li id="actualitat-gran"><a href="#"><img src="img/dest-enamorat-gran.png" /></a></li>
-    	            	<li class="actualitat-miniatures-1erafila"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
-                        <li class="actualitat-miniatures-1erafila"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
+    	            	<li class="actualitat-miniatures"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
+                        <li class="actualitat-miniatures"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
                         <li class="actualitat-miniatures"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
                         <li class="actualitat-miniatures"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
 						<li class="actualitat-miniatures"><a href="#"><img src="img/dest-bcn-noticies.png" /></a></li>
